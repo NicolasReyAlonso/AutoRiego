@@ -44,14 +44,14 @@ void loop() {
   xorGate = buttonLeft^buttonRight;
   if (xorGate == HIGH){
     if (buttonLeft == HIGH){
-      left();
+      Close();
     }else{
-      right();
+      Open();
     }
   }
 }
 
-void right(){
+void Open(){
    if (servo.read() == 10){
      tone(speakerPin, 300, 200);
      delay(100);
@@ -62,7 +62,7 @@ void right(){
    servo.write(10);
    delay(500);
 }
-void left(){
+void Close(){
    if (servo.read() == 160){
      tone(speakerPin, 300, 200);
      delay(100);
