@@ -15,7 +15,6 @@ int buttonRight;
 int xorGate;
 
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);
   digitalWrite(4, LOW);
   LCD.init();
@@ -27,8 +26,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
   /*
     Más información será añadida a medida que amuente el código.
 
