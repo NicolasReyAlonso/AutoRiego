@@ -28,7 +28,11 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  
+
+  /*
+    Más información será añadida a medida que amuente el código.
+
+  */
   LCD.setCursor(1, 0);
   LCD.print("Water Level:");
   LCD.display();
@@ -47,10 +51,7 @@ void loop() {
     }else{
       right();
     }
-
-
   }
-  servo.read();
 }
 
 void right(){
